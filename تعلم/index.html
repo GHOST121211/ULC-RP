@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ULC RP قوانين السيرفر</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    header h2 {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .server-image {
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .buttons button:hover {
+      background-color: #cc0000;
+    }
+
+    .law-content {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      display: none;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+
+    .discord-link {
+      color: #ff0000;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .discord-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>المقـاطعة اللـيبيـة المتحدة・𝗨𝗡𝗜𝗧𝗘𝗗 𝗟𝗜𝗕𝗬𝗔 𝗖𝗢𝗨𝗡𝗧𝗬</h1>
+    <h2>dev by: [GHOST]</h2>
+    <img src="fee5add9fe1e7519.png" alt="Server Logo" class="server-image">
+  </header>
+
+  <div class="buttons">
+    <button onclick="showLaw('police')">قانون الشرطة</button>
+    <button onclick="showLaw('mechanic')">قانون الميكانيكي</button>
+    <button onclick="showLaw('city')">قانون المدينة</button>
+    <button onclick="showLaw('gangs')">قانون العصابات</button>
+    <button onclick="showLaw('health')">قانون الصحة</button>
+  </div>
+
+  <div id="lawContent" class="law-content"></div>
+  <div class="buttons">
+    <button onclick="showLaw('ULC')">دخول السيرفر</button>
+  <footer>
+    <a href="https://discord.gg/yourserverlink" target="_blank" class="https://discord.gg/libya-ulc"> </a>
+  </footer>
+
+  <script>
+    function showLaw(type) {
+      let content = '';
+
+      switch (type) {
+        case 'police':
+          content = 'قانون الشرطة: يجب على كل ضابط احترام القانون وعدم تجاوزه. التصرف بحكمة وضبط النفس في جميع المواقف.';
+          break;
+        case 'mechanic':
+          content = 'قانون الميكانيكي: يجب على كل ميكانيكي العمل بنزاهة وإصلاح السيارات بمهارة. تجنب الغش أو التلاعب بالمركبات.';
+          break;
+        case 'city':
+          content = 'قانون المدينة: يجب على كل مواطن الالتزام بقوانين المدينة والحفاظ على النظام العام. احترام الآخرين واجب.';
+          break;
+        case 'gangs':
+          content = 'قانون العصابات: يجب على أعضاء العصابات الالتزام بالقواعد الداخلية واحترام الحدود مع العصابات الأخرى.';
+          break;
+        case 'health':
+          content = 'قانون الصحة: الحفاظ على الصحة العامة واجب على الجميع. يجب احترام الكوادر الطبية وتوفير الدعم اللازم لهم.';
+          break;
+          case 'ULC':
+content = 'https://discord.gg/Yf9mmcpuQk.';
+      }
+
+      const lawContentDiv = document.getElementById('lawContent');
+      lawContentDiv.innerText = content;
+      lawContentDiv.style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
+
